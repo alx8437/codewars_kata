@@ -33,3 +33,17 @@ function bonusTime(salary, bonus) {
 const stringToArray = (string) => {
     return string.split(' ')
 }
+
+// Counting sheep...
+function countSheep(sheep) {
+    let result = 0;
+
+    for (let i = 0; i < sheep.length; i++ ) {
+        if (sheep[i]) {
+            result += 1;
+        }
+    }
+
+    return result;
+}
+
