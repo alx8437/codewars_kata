@@ -58,3 +58,22 @@ function removeEveryOther(arr){
     return result
 }
 
+// Contamination #1 -String-
+function contamination(text, char){
+    if (text === '' || char === '') {
+        return ''
+    }
+
+    let result = ''
+
+    for (let i = 0; i < text.length; i++) {
+        result += char
+    }
+
+    return result
+}
+
+function contamination(text, char){
+    return char.repeat(text.length)
+}
+
