@@ -77,3 +77,8 @@ function contamination(text, char){
     return char.repeat(text.length)
 }
 
+// Formatting decimal places #0
+function twoDecimalPlaces(n) {
+    return Number(n.toFixed(2))
+}
+
