@@ -82,3 +82,14 @@ function twoDecimalPlaces(n) {
     return Number(n.toFixed(2))
 }
 
+// Beginner - Reduce but Grow
+function grow(x) {
+    let multiply = 1
+
+    for (let i = 0; i < x.length; i++) {
+        multiply *= x[i]
+    }
+
+    return multiply;
+}
+
