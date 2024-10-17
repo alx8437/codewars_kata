@@ -93,3 +93,43 @@ function grow(x) {
     return multiply;
 }
 
+// Find Maximum and Minimum Values of a List
+const min = function(list){
+    let result = list[0];
+
+    for(let i = 0; i < list.length; i += 1) {
+        if (list[i] < result) {
+            result = list[i]
+        }
+    }
+
+    return result;
+}
+
+const max = function(list){
+    let result = list[0];
+
+    for(let i = 0; i < list.length; i += 1) {
+        if (list[i] > result) {
+            result = list[i]
+        }
+    }
+
+    return result;
+}
+
+const min = (list) => Math.min(...list);
+const max = (list) => Math.max(...list);
+
+var min = function(list){
+    list.sort((a, b) => (a - b));
+    return list[0];
+}
+
+var max = function(list){
+    list.sort((a, b) => (b - a));
+    return list[0];
+}
+
+
+
