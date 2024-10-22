@@ -131,5 +131,13 @@ var max = function(list){
     return list[0];
 }
 
+// Are You Playing Banjo?
+function areYouPlayingBanjo(name) {
+    const startSymbol = name.toLowerCase()[0]
 
-
+    if (startSymbol === 'r') {
+        return `${name} plays banjo`
+    } else {
+        return `${name} does not play banjo`
+    }
+}
