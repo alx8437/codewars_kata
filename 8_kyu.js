@@ -142,7 +142,7 @@ function areYouPlayingBanjo(name) {
     }
 }
 
-// FIXME: Replace all dots
+// Replace all dots
 
 const replaceDots = (str) => {
     return str.replace(/\./g, '-');
