@@ -148,5 +148,7 @@ const replaceDots = (str) => {
     return str.replace(/\./g, '-');
 }
 
-
-console.log(replaceDots("one.two.three"))
+// Grasshopper - Debug sayHello
+function sayHello(name) {
+    return 'Hello, ' + name
+}
