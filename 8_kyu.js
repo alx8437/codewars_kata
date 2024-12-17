@@ -118,19 +118,6 @@ const max = function(list){
     return result;
 }
 
-// const min = (list) => Math.min(...list);
-// const max = (list) => Math.max(...list);
-//
-// var min = function(list){
-//     list.sort((a, b) => (a - b));
-//     return list[0];
-// }
-//
-// var max = function(list){
-//     list.sort((a, b) => (b - a));
-//     return list[0];
-// }
-
 // Are You Playing Banjo?
 function areYouPlayingBanjo(name) {
     const startSymbol = name.toLowerCase()[0]
@@ -153,7 +140,7 @@ function sayHello(name) {
     return 'Hello, ' + name
 }
 
-//Switch it Up!
+// Switch it Up!
 function switchItUp(number){
 	switch(number){
     case 1:
@@ -178,3 +165,11 @@ function switchItUp(number){
       return 'Zero';
     }
 }
+
+// Add new item (collections are passed by reference)
+function addExtra( listOfNumbers ){
+
+    return [...listOfNumbers, 13]
+}
+
+
