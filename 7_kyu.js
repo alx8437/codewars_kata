@@ -9,4 +9,13 @@ const capitals = function (word) {
     return arrayFromString
 };
 
-console.log(capitals('CodEWaRs'))
+// Sum of all arguments
+function sum(...args) {
+    let result = 0;
+
+    for(let arg of args) {
+        result += arg
+    }
+
+    return result
+}
