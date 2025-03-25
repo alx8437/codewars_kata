@@ -172,5 +172,18 @@ function addExtra( listOfNumbers ){
     return [...listOfNumbers, 13]
 }
 
+// How good are you really?
+
+function betterThanAverage(classPoints, yourPoints) {
+    const sumClassPoints = classPoints.reduce((acc, num) => {
+        return acc + num
+    }, 0)
+
+    const averageClassPoints = sumClassPoints / classPoints.length
+
+    return yourPoints > averageClassPoints
+}
+
+
 
 
