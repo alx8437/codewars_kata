@@ -184,6 +184,42 @@ function betterThanAverage(classPoints, yourPoints) {
     return yourPoints > averageClassPoints
 }
 
+// Simple calculator
+function calculator(a,b,sign) {
+    if (typeof a !== "number" || typeof b !== "number"){
+        return 'unknown value'
+    }
+
+    switch (sign) {
+        case '+': {
+            return a + b
+        }
+
+        case '-': {
+            return a - b
+        }
+
+        case '/': {
+            return a / b
+        }
+
+        case '*': {
+            return a * b
+        }
+
+        default: 'unknown value'
+    }
+}
+
+// Even or Odd numbers
+
+function evenOrOdd(number) {
+    if (number % 2 === 0) {
+        return "Even"
+    } else {
+        return "Odd"
+    }
+}
 
 
 
