@@ -226,5 +226,15 @@ const Ball = function(ballType) {
     this.ballType = ballType || 'regular'
 };
 
+//Remove First and Last Character
+const removeChar = (str) => {
+    return str.length <= 2 ? '' : str.slice(1, -1);
+}
+
+// isReallyNaN
+const isReallyNaN = (val) => {
+    // return isNaN(val);  // wasn't working as planned :-(
+    return val !== val
+};
 
 
