@@ -237,4 +237,10 @@ const isReallyNaN = (val) => {
     return val !== val
 };
 
+// 5 without numbers !!
+function unusualFive() {
+    return 'qwert'.length
+}
+
+
 
