@@ -242,5 +242,21 @@ function unusualFive() {
     return 'qwert'.length
 }
 
+// Calculate average
+const findAverage = (array) => {
+    if (array.length === 0) {
+        return 0
+    }
+
+    let sum = 0;
+    for (let i = 0; i < array.length; i++) {
+        sum = sum + array[i];
+    }
+
+    const result = sum / array.length;
+
+    return result;
+}
+
 
 
