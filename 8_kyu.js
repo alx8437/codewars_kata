@@ -258,5 +258,18 @@ const findAverage = (array) => {
     return result;
 }
 
+// Reversed Words
+const reverseWords = (str) => {
+    const arrFromString = str.split(' ');
+
+    let reverseArr = [];
+    for (let i = arrFromString.length - 1; i >= 0; i--) {
+        reverseArr.push(arrFromString[i])
+    }
+
+    return reverseArr.join(' ');
+}
+
+
 
 
