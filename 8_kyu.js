@@ -270,6 +270,15 @@ const reverseWords = (str) => {
     return reverseArr.join(' ');
 }
 
+const areaOrPerimeter = function(l , w) {
+    return l === w ? l * w : l * 2 + w * 2
+};
+
+function whoIsPaying(name){
+    if (name.length <= 2) return [name]
+    return [name, name.substring(0, 2)]
+}
+
 
 
 
