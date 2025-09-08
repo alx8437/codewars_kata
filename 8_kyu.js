@@ -285,5 +285,11 @@ function digitize(n) {
     return digits.reverse();
 }
 
+// Remove First and Last Character Part Two
+function array(string) {
+    const arrayFromString = string.split(',');
+    if (arrayFromString.length < 3) return null
 
+    return arrayFromString.slice(1, -1).join(' ');
+}
 
