@@ -279,6 +279,11 @@ function whoIsPaying(name){
     return [name, name.substring(0, 2)]
 }
 
+// Convert number to reversed array of digits
+function digitize(n) {
+    const digits = n.toString().split('').map(Number);
+    return digits.reverse();
+}
 
 
 
