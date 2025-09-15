@@ -59,19 +59,19 @@ function removeEveryOther(arr){
 }
 
 // Contamination #1 -String-
-function contamination(text, char){
-    if (text === '' || char === '') {
-        return ''
-    }
-
-    let result = ''
-
-    for (let i = 0; i < text.length; i++) {
-        result += char
-    }
-
-    return result
-}
+// function contamination(text, char){
+//     if (text === '' || char === '') {
+//         return ''
+//     }
+//
+//     let result = ''
+//
+//     for (let i = 0; i < text.length; i++) {
+//         result += char
+//     }
+//
+//     return result
+// }
 
 function contamination(text, char){
     return char.repeat(text.length)
@@ -293,3 +293,16 @@ function array(string) {
     return arrayFromString.slice(1, -1).join(' ');
 }
 
+// Ensure question
+function ensureQuestion(str) {
+    return str.endsWith('?') ? str : str.concat('?')
+}
+
+// Thinkful - Number Drills: Blue and red marbles
+function guessBlue(blueStart, redStart, bluePulled, redPulled) {
+    const remainingBlue = blueStart - bluePulled;
+    const remainingRed = redStart - redPulled;
+    const totalRemaining = remainingBlue + remainingRed;
+
+    return remainingBlue / totalRemaining;
+}
