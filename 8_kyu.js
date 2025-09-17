@@ -306,3 +306,21 @@ function guessBlue(blueStart, redStart, bluePulled, redPulled) {
 
     return remainingBlue / totalRemaining;
 }
+
+// Merging sorted integer arrays (without duplicates)
+function mergeArrays(a, b) {
+    const merge = [...a, ...b];
+    const sortedArray = merge.sort((a, b) => a - b);
+    const uniqueArray = [...new Set(sortedArray)];
+
+    return uniqueArray
+}
+
+// Who ate the cookie?
+function cookie(x){
+    const phrase = 'Who ate the last cookie? It was '
+    return typeof x === "string" ? phrase + 'Zach!' : typeof x === 'number' ? phrase + 'Monica!' : phrase + 'the dog!'
+}
+
+
+
