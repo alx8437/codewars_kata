@@ -322,5 +322,24 @@ function cookie(x){
     return typeof x === "string" ? phrase + 'Zach!' : typeof x === 'number' ? phrase + 'Monica!' : phrase + 'the dog!'
 }
 
+// Grasshopper - Summation
+const summation = function (num) {
+    let result = 0
+    for (let i = 1; i <= num; i++) {
+        result += i
+    }
+
+    return result
+}
+
+// toAlternatingCase
+String.prototype.toAlternatingCase = function() {
+    return this.split('')
+        .map(char => char === char.toUpperCase() ? char.toLowerCase() : char.toUpperCase())
+        .join('');
+};
+
+
+
 
 
