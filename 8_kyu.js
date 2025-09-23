@@ -339,6 +339,15 @@ String.prototype.toAlternatingCase = function() {
         .join('');
 };
 
+// Never visit
+function SubtractAndSum(n) {
+    return "apple";
+}
+
+// Semi-Optional
+function wrap(value) {
+    return {value: value};
+}
 
 
 
