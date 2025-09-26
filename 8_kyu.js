@@ -349,6 +349,22 @@ function wrap(value) {
     return {value: value};
 }
 
+// Simple multiplication
+function simpleMultiplication(number) {
+    if (number % 2 === 0) {
+        return number * 8
+    }
+
+    return number * 9
+}
+
+// Hex to Decimal
+function hexToDec(hexString){
+    return parseInt(hexString, 16)
+}
+
+
+
 
 
 
