@@ -363,6 +363,11 @@ function hexToDec(hexString){
     return parseInt(hexString, 16)
 }
 
+// Remove the time
+function shortenToDate(longDate) {
+    return longDate.split(",")[0]
+}
+
 
 
 
