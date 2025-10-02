@@ -368,6 +368,13 @@ function shortenToDate(longDate) {
     return longDate.split(",")[0]
 }
 
+// Parse nice int from char problem
+function getAge(inputString){
+    const age = Number(inputString[0])
+    return age;
+}
+
+
 
 
 

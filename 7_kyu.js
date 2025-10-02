@@ -54,5 +54,15 @@ function factorial(n) {
     return result
 }
 
+// Find the anonymous function
+function FindFunction(funcArr, arr) {
+    const func = funcArr.find(item => typeof item === 'function');
+
+    return arr.filter(func)
+}
+
+
+
+
 
 
