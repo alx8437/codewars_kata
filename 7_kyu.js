@@ -61,6 +61,28 @@ function FindFunction(funcArr, arr) {
     return arr.filter(func)
 }
 
+// Pizza Payments
+function michaelPays(costs) {
+    function michaelPays(costs) {
+        let michaelPays = 0;
+
+        if (costs < 5) {
+            // Michael invites Kate if pizza is less than €5
+            michaelPays = costs;
+        } else {
+            // Kate contributes 1/3 of the price, but no more than €10
+            let kateContribution = costs / 3;
+            if (kateContribution > 10) {
+                kateContribution = 10;
+            }
+            // Michael pays the rest
+            michaelPays = costs - kateContribution;
+        }
+
+        // Return with two decimal places
+        return Number(michaelPays.toFixed(2));
+    }
+}
 
 
 
