@@ -97,6 +97,34 @@ function michaelPays(costs) {
     }
 }
 
+// Fruit string calculator
+function calculate(string) {
+    // Разбиваем текст на слова
+    const words = string.split(' ');
+
+    // Ищем числа и оператор
+    const numbers = [];
+    let operator = null;
+
+    for (const word of words) {
+        // Проверяем, является ли слово числом
+        if (/^\d+$/.test(word)) {
+            numbers.push(parseInt(word));
+        }
+        // Проверяем, является ли слово оператором
+        else if (word === 'gains' || word === 'loses') {
+            operator = word;
+        }
+    }
+
+    // Выполняем вычисление
+    if (operator === 'gains') {
+        return numbers[0] + numbers[1];
+    } else { // 'loses'
+        return numbers[0] - numbers[1];
+    }
+}
+
 
 
 
