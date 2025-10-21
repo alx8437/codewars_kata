@@ -125,6 +125,26 @@ function calculate(string) {
     }
 }
 
+// Valid Parentheses
+function validParentheses(parenStr) {
+    const stack = [];
+
+    for (let char of parenStr) {
+        if (char === '(') {
+            stack.push(char);
+        }
+        if (char === ')') {
+            if (stack.length === 0) {
+                return false
+            }
+            stack.pop()
+        }
+    }
+
+    return stack.length > 0 ? false : true
+}
+
+
 
 
 
