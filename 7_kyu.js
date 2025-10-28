@@ -163,15 +163,22 @@ const repeats = (arr) => {
         if (count[num] === 1) {
             // Ключи объекта - строки, поэтому преобразуем в число
             sum += Number(num);
-            console.log(`✅ Добавили ${num} к сумме. Новая сумма: ${sum}`);
         }
     }
 
     return sum;
 }
 
-console.log(repeats([4, 4, 5, 5, 6, 7]))
+// max diff - easy
+function maxDiff(list) {
+    if (list.length <= 1) {
+        return 0;
+    }
+    const minValue = Math.min(...list);
+    const maxValue = Math.max(...list);
 
+    return maxValue - minValue;
+}
 
 
 
