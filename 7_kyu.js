@@ -137,12 +137,44 @@ function validParentheses(parenStr) {
             if (stack.length === 0) {
                 return false
             }
-            stack.pop()
+            stack.pop();
         }
     }
 
     return stack.length > 0 ? false : true
 }
+
+// Sum of array singles
+const repeats = (arr) => {
+    const count = {};
+
+    // Если число УЖЕ есть в счётчике - берём его значение, если НЕТ - используем 0
+    arr.forEach(num => {
+        count[num] = (count[num] || 0) + 1;
+    });
+
+    // Ищем числа, которые встретились только 1 раз
+    let sum = 0;
+
+    // Проходим по всем числам в счётчике
+    for (let num in count) {
+
+        // Если встретилось 1 раз - добавляем к сумме
+        if (count[num] === 1) {
+            // Ключи объекта - строки, поэтому преобразуем в число
+            sum += Number(num);
+            console.log(`✅ Добавили ${num} к сумме. Новая сумма: ${sum}`);
+        }
+    }
+
+    return sum;
+}
+
+console.log(repeats([4, 4, 5, 5, 6, 7]))
+
+
+
+
 
 
 
