@@ -180,6 +180,31 @@ function maxDiff(list) {
     return maxValue - minValue;
 }
 
+// Argue the toss
+function anArgument(...args) {
+    if (args.length === 0) {
+        return "You didn't give me any arguments."
+    }
+
+    if (args.length === 1) {
+        `You gave me 1 argument and it is "${args[0]}".`
+    }
+
+    if (args.length === 2) {
+        return `You gave me 2 arguments and they are "${args[0]}" and "${args[1]}".`
+    }
+
+    const quotedArgs = args.map(arg => `"${arg}"`)
+    const lastArg = quotedArgs.pop();
+
+    const allButLast = quotedArgs.join(', ')
+
+    return `You gave me ${args.length} arguments and they are ${allButLast} and ${lastArg}.`
+
+
+
+}
+
 
 
 
