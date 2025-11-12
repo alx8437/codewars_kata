@@ -379,6 +379,15 @@ function addFive(num) {
     return num + 5
 }
 
+// The 'if' function
+function _if(bool, func1, func2) {
+    if (bool) {
+        func1()
+        return
+    }
+    func2()
+}
+
 
 
 
