@@ -388,6 +388,11 @@ function _if(bool, func1, func2) {
     func2()
 }
 
+// Is it a palindrome?
+const isPalindrome = (str) => {
+    const reversStr = str.split('').reverse().join('');
+    return reversStr.toUpperCase() === str.toUpperCase();
+}
 
 
 
