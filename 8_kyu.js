@@ -394,6 +394,14 @@ const isPalindrome = (str) => {
     return reversStr.toUpperCase() === str.toUpperCase();
 }
 
+// Is this plural?
+function plural(n) {
+    if (n === 1) {
+        return false
+    }
+    return true
+}
+
 
 
 
