@@ -200,10 +200,22 @@ function anArgument(...args) {
     const allButLast = quotedArgs.join(', ')
 
     return `You gave me ${args.length} arguments and they are ${allButLast} and ${lastArg}.`
-
-
-
 }
+
+// Build a square
+function generateShape(integer){
+    let str = '+'.repeat(integer);
+    let arr = [];
+
+    for (let i = 0; i < integer; i++) {
+        arr.push(str);
+    }
+
+    return arr.join('\n')
+}
+
+
+
 
 
 
