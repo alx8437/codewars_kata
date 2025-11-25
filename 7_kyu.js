@@ -214,6 +214,24 @@ function generateShape(integer){
     return arr.join('\n')
 }
 
+// 99 bottles of beer on the wall
+const sing = function () {
+    let lyrics = [];
+
+    for (let i = 99; i > 0; i--) {
+        let current = i === 1 ? '1 bottle' : i + ' bottles'
+        let next = i - 1 === 0 ? 'no more bottles' : (i - 1 === 1 ? '1 bottle' : (i - 1) + ' bottle')
+
+        lyrics.push(`${current} of beer on the wall, ${current} of beer.`);
+        lyrics.push(`Take one down and pass it around, ${next} of beer on the wall.`);
+    }
+
+    lyrics.push('No more bottles of beer on the wall, no more bottles of beer.');
+    lyrics.push('Go to the store and buy some more, 99 bottles of beer on the wall.');
+
+    return lyrics
+};
+
 
 
 
