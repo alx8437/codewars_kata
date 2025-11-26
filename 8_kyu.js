@@ -402,6 +402,13 @@ function plural(n) {
     return true
 }
 
+function describeAge(age) {
+    return age <= 12 ? "You're a(n) kid"
+        : (age >= 13 && age <= 17) ? "You're a(n) teenager"
+            : (age >= 18 && age <= 64) ? "You're a(n) adult" : "You're a(n) elderly
+}
+
+const describeAge = a =>`You're a(n) ${a<13?'kid':a<18?'teenager':a<65?'adult':'elderly'}`
 
 
 
