@@ -410,7 +410,7 @@ function describeAge(age) {
 
 const describeAge = a =>`You're a(n) ${a<13?'kid':a<18?'teenager':a<65?'adult':'elderly'}`
 
-// Object Oriented Piracy
+// Object-Oriented Piracy
 class Ship {
     constructor(draft, crew) {
         this.draft = draft
@@ -422,7 +422,13 @@ class Ship {
 
         return cargoWeight > 20
     }
+}
 
+// Swap Values
+function swapValues(args) {
+    const temp = args[0];
+    args[0] = args[1];
+    args[1] = temp;
 }
 
 
