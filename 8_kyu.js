@@ -405,10 +405,9 @@ function plural(n) {
 function describeAge(age) {
     return age <= 12 ? "You're a(n) kid"
         : (age >= 13 && age <= 17) ? "You're a(n) teenager"
-            : (age >= 18 && age <= 64) ? "You're a(n) adult" : "You're a(n) elderly
+            : (age >= 18 && age <= 64) ? "You're a(n) adult" : "You're a(n) elderly"
 }
 
-const describeAge = a =>`You're a(n) ${a<13?'kid':a<18?'teenager':a<65?'adult':'elderly'}`
 
 // Object-Oriented Piracy
 class Ship {
@@ -429,6 +428,11 @@ function swapValues(args) {
     const temp = args[0];
     args[0] = args[1];
     args[1] = temp;
+}
+
+// Opposite number
+const opposite = (number) => {
+    return (-number)
 }
 
 
