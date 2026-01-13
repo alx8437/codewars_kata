@@ -435,6 +435,12 @@ const opposite = (number) => {
     return (-number)
 }
 
+// Century From Year
+function century(year) {
+    // Finish this :)
+    return Math.ceil(year/100)
+}
+
 
 
 
