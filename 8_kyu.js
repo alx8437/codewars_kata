@@ -437,9 +437,20 @@ const opposite = (number) => {
 
 // Century From Year
 function century(year) {
-    // Finish this :)
     return Math.ceil(year/100)
 }
+
+// Abbreviate a Two Word Name
+function abbrevName(name) {
+    const arrayFromName = name.split(' ')
+    const firstName = arrayFromName[0]
+    const lastName = arrayFromName[1]
+    return `${firstName[0].toUpperCase()}.${lastName[0].toUpperCase()}`
+}
+
+console.log(abbrevName("Alex Zelenskii"))
+
+
 
 
 
