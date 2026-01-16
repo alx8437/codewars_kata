@@ -448,8 +448,19 @@ function abbrevName(name) {
     return `${firstName[0].toUpperCase()}.${lastName[0].toUpperCase()}`
 }
 
-console.log(abbrevName("Alex Zelenskii"))
+// Reversed Strings
+function solution(str){
+    let reverse = '';
+    // for (let i = str.length - 1; i >= 0; i--) {
+    //     reverse += str[i]
+    // }
+    for (let i = 0; i <= str.length - 1; i++) {
+        reverse = str[i] + reverse
+    }
+    return reverse
+}
 
+console.log(solution('Alex'))
 
 
 
